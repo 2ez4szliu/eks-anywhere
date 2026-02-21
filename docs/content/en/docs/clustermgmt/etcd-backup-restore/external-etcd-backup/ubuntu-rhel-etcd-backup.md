@@ -177,4 +177,3 @@ Resume Etcdadm cluster reconcile and control plane machine health checks for the
 kubectl annotate clusters.anywhere.eks.amazonaws.com $CLUSTER_NAME anywhere.eks.amazonaws.com/paused- --kubeconfig mgmt-cluster.kubeconfig
 
 kubectl patch clusters.cluster.x-k8s.io $CLUSTER_NAME --type merge -p '{"spec":{"paused": false}}' -n eksa-system --kubeconfig mgmt-cluster.kubeconfig
-```
